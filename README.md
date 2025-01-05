@@ -9,7 +9,6 @@
 - **PostgreSQL**: Veritabanı yönetimi ve depolama.
 - **Extensions**: Program.cs dosyasının düzenli ve okunabilir olması için.
 - **DTO Yapıları**: Verilerin taşınması ve işlenmesi.
-- **HTML, CSS, Bootstrap**: Kullanıcı arayüzü tasarımı.
 
 ## Proje Özellikleri 🚀
 
