@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using MovieReservationSystem.Concrete;
 using MovieReservationSystem.Services.Interfaces;
 using MovieReservationSystem.Services.Repository;
+using MovieReservationSystem.Services.Token;
 
 namespace MovieReservationSystem.Extensions
 {
@@ -26,6 +27,7 @@ namespace MovieReservationSystem.Extensions
             services.AddScoped<IScreeningService, ScreeningService>();
             services.AddScoped<ITicketService, TicketService>();
             services.AddScoped<ISeatsService, SeatsService>();
+            services.AddScoped<ITokenService, TokenService>();
 
             services.AddControllers();
             services.AddEndpointsApiExplorer();

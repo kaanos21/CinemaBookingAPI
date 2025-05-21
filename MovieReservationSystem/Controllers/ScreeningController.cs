@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MovieReservationSystem.Dtos.ScreeningDtos;
 using MovieReservationSystem.Services.Interfaces;
@@ -7,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace MovieReservationSystem.Controllers
 {
+    [Authorize(AuthenticationSchemes = "Admin", Roles = "Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class ScreeningController : ControllerBase

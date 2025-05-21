@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MovieReservationSystem.Dtos.CategoryDtos;
 using MovieReservationSystem.Services.Interfaces;
 
 namespace MovieReservationSystem.Controllers
 {
+    [Authorize(AuthenticationSchemes = "Admin", Roles = "Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class CategoryController : ControllerBase

@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using MovieReservationSystem.Entities;
+using System;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace MovieReservationSystem.Concrete
 {

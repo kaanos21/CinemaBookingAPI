@@ -13,6 +13,6 @@ namespace MovieReservationSystem.Entities
         public Hall Hall { get; set; }
         public Movie Movie { get; set; }
         public ICollection<Ticket> Tickets { get; set; }
-        public ICollection<Seat> Seats { get; set; } // Seats koleksiyonu
+        public ICollection<Seat> Seats { get; set; } 
     }
 }

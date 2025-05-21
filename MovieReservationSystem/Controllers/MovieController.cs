@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MovieReservationSystem.Dtos.MovieDtos;
 using MovieReservationSystem.Services.Interfaces;
 
 namespace MovieReservationSystem.Controllers
 {
+    [Authorize(AuthenticationSchemes = "Admin", Roles = "Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class MovieController : ControllerBase
@@ -71,6 +73,7 @@ namespace MovieReservationSystem.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
+        [Authorize(AuthenticationSchemes = "Admin", Roles = "Admin")]
         [HttpGet("getallmovies")]
         public async Task<IActionResult> GetAllMovies()
         {

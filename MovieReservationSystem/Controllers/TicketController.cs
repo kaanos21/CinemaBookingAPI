@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MovieReservationSystem.Dtos.TicketDtos;
 using MovieReservationSystem.Services.Interfaces;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace MovieReservationSystem.Controllers
 {
+    [Authorize(AuthenticationSchemes = "User", Roles = "User")]
     [Route("api/[controller]")]
     [ApiController]
     public class TicketController : ControllerBase
@@ -24,7 +26,6 @@ namespace MovieReservationSystem.Controllers
         {
             try
             {
-                // Kullanıcı kimliğini auth mekanizmasından alıyoruz
                 var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
                 if (userIdClaim == null)
                 {
