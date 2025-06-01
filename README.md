@@ -42,4 +42,5 @@ This project is designed to facilitate cinema ticket reservation processes and e
 - **Güvenli Kimlik Doğrulama**: Kullanıcılar hesaplarına güvenli bir şekilde giriş yapabilirler.
 - **SOLID Prensipleri**: Proje, yazılım geliştirme süreçlerinde en iyi uygulamaları sağlamak amacıyla SOLID prensiplerine uygun olarak geliştirilmiştir.
 
+
 Bu proje, sinema bilet rezervasyonu süreçlerini kolaylaştırmak ve kullanıcı deneyimini artırmak amacıyla tasarlanmıştır. Geliştirme sürecinde elde edilen deneyimler ve öğrenimler, gelecekteki projeler için değerli bir temel oluşturacaktır.
