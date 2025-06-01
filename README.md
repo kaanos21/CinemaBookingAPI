@@ -44,3 +44,5 @@ This project is designed to facilitate cinema ticket reservation processes and e
 
 
 Bu proje, sinema bilet rezervasyonu süreçlerini kolaylaştırmak ve kullanıcı deneyimini artırmak amacıyla tasarlanmıştır. Geliştirme sürecinde elde edilen deneyimler ve öğrenimler, gelecekteki projeler için değerli bir temel oluşturacaktır.
+
+
